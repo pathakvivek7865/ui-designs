@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+
+  *, *::after, *::before{
+    @apply box-border;
+  }
+
+  .shadow-circle {
+    @apply absolute left-0 top-0 h-[30rem] w-[30rem] -translate-x-24 -translate-y-14 rounded-full shadow-ring sm:h-[40rem] sm:w-[40rem]  sm:-translate-x-40;
+  }
+
+  .login-card-before {
+    @apply absolute top-0 h-[30rem] w-[20rem] -rotate-6 rounded-sm bg-white/20;
+  }
+
+  .icon-tabler {
+    @apply h-5 w-5;
+  }
+
+  .icon-tabler-user {
+    @apply h-16 w-16;
+  }
+
+  input {
+    @apply focus:outline-none;
+  }
+
+  form {
+    @apply z-20 mx-auto mt-8 flex w-9/12 max-w-sm flex-col items-center;
+  }
+
+  .login-input-div {
+    @apply mx-auto flex items-center space-x-2 rounded-full bg-white/30  px-4 py-2;
+  }
+
+  .login-input {
+    @apply w-full bg-transparent text-sm placeholder:text-xs placeholder:text-black;
+  }
+
+  .profile-page-header-progress-bar-before {
+    @apply absolute top-0 left-0 bottom-0 w-[331px] bg-[#F17A37] rounded-full;;
+  }
+
+  .profile-page-header-card-before{
+    @apply w-[968px] h-[100px] absolute -bottom-[50px] bg-[#CFCFCF] rounded-[33px]
+  }
+}
