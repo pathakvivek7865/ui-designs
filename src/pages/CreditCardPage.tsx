@@ -23,7 +23,7 @@ function CreditCardPage() {
         <div>
           <img
             className="z-20 mt-1 ml-2 w-10 sm:mt-4 sm:w-12"
-            src="../src/assets/sim-card.png"
+            src="/sim-card.png"
           />
         </div>
         {/* bottom */}
@@ -36,7 +36,7 @@ function CreditCardPage() {
             <p className="mt-2 text-sm">Vivek Pathak</p>
           </div>
           <div className="flex flex-col items-center justify-between">
-            <img className="w-16" src="../src/assets/visa.png" />
+            <img className="w-16" src="/visa.png" />
             <p className="text-sm">Debit</p>
           </div>
         </div>
