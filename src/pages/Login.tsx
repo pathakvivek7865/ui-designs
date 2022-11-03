@@ -1,23 +1,10 @@
+import DesignCredit from "../components/DesignCredit";
+
 function Login() {
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center bg-gradient-to-r from-[#339] to-[#f0c] font-poppins">
-      <div className="before:login-card-before relative py-20 z-20 flex  h-[30rem]  w-[20rem] flex-col items-center justify-center rounded-md bg-white/50">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="icon icon-tabler icon-tabler-user"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <circle cx="12" cy="7" r="4"></circle>
-          <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
-        </svg>
+      <div className="before:login-card-before relative z-20 flex h-[30rem]  w-[20rem]  flex-col items-center justify-center rounded-md bg-white/50 py-20">
+        <img className="z-20 h-14 w-14" src="/icons/github.svg"/>
         {/* login header */}
         <div className="mt-8 text-center">
           <h1 className="text-2xl font-bold">Sign In</h1>
@@ -147,6 +134,7 @@ function Login() {
           </div>
         </div>
       </div>
+      <DesignCredit sourceLink="https://www.youtube.com/watch?v=B6e4Fg_-CXY" />
     </div>
   );
 }

@@ -1,6 +1,8 @@
+import DesignCredit from "../components/DesignCredit";
+
 function PriceCard() {
   return (
-    <div className="flex h-screen w-screen items-center justify-center bg-[#F1F4FF] font-poppins text-[12px] text-[#1B255A]">
+    <div className="flex flex-col h-screen w-screen items-center justify-center bg-[#F1F4FF] font-poppins text-[12px] text-[#1B255A]">
       <div className="flex h-[450px] w-[356px] flex-col items-center justify-between rounded-[30px] bg-white py-[38px] px-[52px] shadow-priceCard">
         <div className="flex h-[94px] w-[94px] flex-col items-center justify-center rounded-[86px] border border-[#A6ADD2] shadow-priceCardTopCircle">
           <img src="/icons/image.svg" className="h-[44px] w-[44px]" />
@@ -14,7 +16,7 @@ function PriceCard() {
           <p className="font-medium leading-3 uppercase">nok/month</p>
         </div>
         <div>
-          <div className="flex w-[206px] items-center justify-between gap-[8px]">
+          <div className="flex w-[206px] items-center cursor-pointer justify-between gap-[8px]">
             <div className="flex h-[42px] w-[48px] items-center justify-center rounded-[15px] border-2 border-[#D2D9F3] bg-white">
               <p className="text-[18px] font-medium">10</p>
             </div>
@@ -36,6 +38,7 @@ function PriceCard() {
           Subscribe
         </button>
       </div>
+      <DesignCredit sourceLink="https://uidesigndaily.com/posts/figma-price-card-pricing-day-1549" />
     </div>
   );
 }

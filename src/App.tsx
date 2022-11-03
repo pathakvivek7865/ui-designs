@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import NotFound from "./pages/NotFound";
 import ProfilePageHeader from "./pages/ProfilePageHeader";
 import PriceCard from "./pages/PriceCard";
+import EnterPassword from "./pages/EnterPassword";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="price-card" element={<PriceCard />} />
           <Route path="profile-page-header" element={<ProfilePageHeader />} />
+          <Route path="enter-password" element={<EnterPassword />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

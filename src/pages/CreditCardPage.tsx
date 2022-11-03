@@ -1,7 +1,9 @@
+import DesignCredit from "../components/DesignCredit";
+
 function CreditCardPage() {
   return (
-    <div className="flex h-screen w-screen items-center justify-center bg-slate-200 font-montserrat">
-      <div className="before:shadow-circle relative m-4 flex w-[24rem] flex-col justify-between overflow-hidden rounded-2xl bg-gradient-to-br from-black via-[#444] to-black p-6 text-white shadow-2xl shadow-black sm:w-[28rem] ">
+    <div className="flex flex-col h-screen w-screen items-center justify-center bg-slate-200 font-montserrat">
+      <div className="before:shadow-circle relative m-4 flex  flex-col justify-between overflow-hidden rounded-2xl bg-gradient-to-br from-black via-[#444] to-black p-6 text-white shadow-2xl shadow-black sm:w-[28rem] ">
         {/* top */}
         <div className="flex items-center justify-between">
           <p className="z-20 text-xl font-medium tracking-wider sm:text-2xl">
@@ -41,6 +43,7 @@ function CreditCardPage() {
           </div>
         </div>
       </div>
+      <DesignCredit sourceLink="https://www.youtube.com/watch?v=5DFvs2qyEvo&t=25s" />
     </div>
   );
 }

@@ -43,7 +43,7 @@
   }
 
   .profile-page-header-progress-bar-before {
-    @apply absolute top-0 left-0 bottom-0 w-[331px] bg-[#F17A37] rounded-full;;
+    @apply absolute top-0 left-0 bottom-0 w-1/2 bg-[#F17A37] rounded-full;;
   }
 
   .profile-page-header-card-before{
