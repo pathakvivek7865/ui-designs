@@ -77,6 +77,7 @@ export default function EnterPassword() {
         {/* Reset pasword */}
         <a className="cursor-pointer text-sm font-semibold underline">
           Reset Password
+
         </a>
       </div>
       <DesignCredit sourceLink="https://uidesigndaily.com/posts/figma-enter-password-log-in-authentication-card-day-1583" />

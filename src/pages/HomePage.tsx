@@ -37,6 +37,13 @@ function HomePage() {
       author: "pathakvivek7865",
       date: "2022-11-03",
     },
+    {
+      title: "Rental Car Search",
+      imgSrc: "/screenshots/rental-car-search.png",
+      url: "components/rental-car-search",
+      author: "pathakvivek7865",
+      date: "2022-11-04",
+    },
   ];
 
   return (

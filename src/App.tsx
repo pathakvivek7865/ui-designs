@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound";
 import ProfilePageHeader from "./pages/ProfilePageHeader";
 import PriceCard from "./pages/PriceCard";
 import EnterPassword from "./pages/EnterPassword";
+import RentalCarSearch from "./pages/RentalCarSearch";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="price-card" element={<PriceCard />} />
           <Route path="profile-page-header" element={<ProfilePageHeader />} />
           <Route path="enter-password" element={<EnterPassword />} />
+          <Route path="rental-car-search" element={<RentalCarSearch />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

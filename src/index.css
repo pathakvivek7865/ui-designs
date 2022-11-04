@@ -49,4 +49,8 @@
   .profile-page-header-card-before{
     @apply w-[968px] h-[100px] absolute -bottom-[50px] bg-[#CFCFCF] rounded-[33px]
   }
+
+  .rental-car-search-card-before{
+    @apply h-3/4 w-3/4 -z-10 -top-16 absolute  bg-[#FCC863] rounded-3xl
+  }
 }
