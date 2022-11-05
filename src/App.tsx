@@ -8,6 +8,7 @@ import ProfilePageHeader from "./pages/ProfilePageHeader";
 import PriceCard from "./pages/PriceCard";
 import EnterPassword from "./pages/EnterPassword";
 import RentalCarSearch from "./pages/RentalCarSearch";
+import { BillingPage } from "./pages/BillingPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="profile-page-header" element={<ProfilePageHeader />} />
           <Route path="enter-password" element={<EnterPassword />} />
           <Route path="rental-car-search" element={<RentalCarSearch />} />
+          <Route path="billing" element={<BillingPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

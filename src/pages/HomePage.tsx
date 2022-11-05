@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import {AiOutlineCalendar} from "react-icons/ai";
 
 function HomePage() {
   const designs = [
@@ -44,6 +45,13 @@ function HomePage() {
       author: "pathakvivek7865",
       date: "2022-11-04",
     },
+    {
+      title: "Billing",
+      imgSrc: "/screenshots/billing.png",
+      url: "components/billing",
+      author: "pathakvivek7865",
+      date: "2022-11-05",
+    },
   ];
 
   return (
@@ -55,17 +63,21 @@ function HomePage() {
             <h3 className="px-4 text-4xl font-semibold lg:px-0 ">UI Designs</h3>
             <div className="my-16 grid w-full grid-cols-1 gap-8 px-4 sm:grid-cols-2 md:grid-cols-3 lg:px-0">
               {/* card */}
-              {designs.map((design) => (
+              {designs.reverse().map((design) => (
                 <Link key={design.url} to={`${design.url}`}>
-                  <div className="flex aspect-[1.6]   flex-col items-center overflow-hidden rounded-2xl border border-slate-900 border-opacity-10 bg-white shadow-priceCardTopCircle">
+                  <div className="flex aspect-[1.6] justify-between  flex-col items-start overflow-hidden rounded-2xl border border-slate-900 border-opacity-10 bg-white shadow-priceCardTopCircle">
                     <div className="flex-2 flex h-full w-full items-center justify-center overflow-hidden bg-white">
                       <img
                         className="h-full w-full object-cover"
                         src={design?.imgSrc ?? "/icons/image.svg"}
                       />
                     </div>
-                    <div className="flex-1 py-4">
-                      <p className="font-medium">{design?.title ?? ""}</p>
+                    <div className="p-4 border-t-2 w-full">
+                      <p className="font-bold text-lg">{design?.title ?? ""}</p>
+                      <div className="flex items-center mt-2 gap-2">
+                        <AiOutlineCalendar className="w-5 h-5"/>
+                        <p className="text-sm">{design.date}</p>
+                      </div>
                     </div>
                   </div>
                 </Link>
@@ -88,8 +100,11 @@ function HomePage() {
           />
         </a>
 
-        <a className="bg-transparent" href="https://www.vivekpathak.com.np/"
-         target={"_blank"}>
+        <a
+          className="bg-transparent"
+          href="https://www.vivekpathak.com.np/"
+          target={"_blank"}
+        >
           <p className="mt-2 text-sm text-slate-400">
             Made by <span className="text-white">Vivek Pathak</span> with
             &hearts;

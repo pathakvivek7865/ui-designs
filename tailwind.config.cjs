@@ -17,7 +17,10 @@ module.exports = {
         priceCard: "0 20px 25px -15px rgba(157,172,227,.30)",
         priceCardTopCircle: "0 10px 20px -12px rgba(116,146,255,.48)",
         enterPasswordCardShadow: "0 44px 104px 0px rgba(19,43,80,.1)",
-        rentalCarSearchCardShadow: "0 44px 64px 0px rgba(69,25,160,.1)"
+        rentalCarSearchCardShadow: "0 44px 64px 0px rgba(69,25,160,.1)",
+
+        // Billing
+        billingTableRowShadow:"0 8px 19px 0px rgba(223,223,253,.6)"
 
 
       },
@@ -27,10 +30,18 @@ module.exports = {
       }
       ,
       colors: {
+        // Rental Car Search
         rentalCarSearchPrimary: "#0D1C52",
         rentalCarSearchBg: "#F5F3E6",
         rentalCarSearchSecondary: "#8F9DCE",
-        rentalCarSearchAccent: "#FE6F4F"
+        rentalCarSearchAccent: "#FE6F4F",
+
+        // Billing 
+        billingPrimary: "#1A194D",
+        billingSecondary: "#62618F",
+        billingAccent: "#EE4D38",
+        billingBg: "#CBCBD9",
+        billingNavBg: "#F8F8FF",
       }
     },
   },

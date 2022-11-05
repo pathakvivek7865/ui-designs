@@ -5,7 +5,7 @@ function UiDesignLayout() {
   return (
     <>
       <NavLink to={"/"}>
-        <div className="shadow-lg absolute z-50 top-4 left-4 flex h-12 w-12 rounded-full bg-white p-2">
+        <div className="fixed top-4 left-4 z-50 flex h-12 w-fit rounded-full bg-white p-2  shadow-lg">
           <img src="/icons/arrow-left.svg" />
         </div>
       </NavLink>
