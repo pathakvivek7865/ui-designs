@@ -10,8 +10,8 @@ export default function NavItemBilling({
     
   return (
     <div
-      className={`flex w-full cursor-pointer items-center rounded-md  hover:text-billingPrimary  ${
-        title === "Billing" ? "text-billingPrimary" : "text-billingSecondary"
+      className={`flex w-full cursor-pointer  items-center rounded-md  hover:text-billingPrimary  ${
+        title === "Billing" ? "text-billingPrimary font-medium" : "text-billingSecondary"
       }`}
     >
       <div

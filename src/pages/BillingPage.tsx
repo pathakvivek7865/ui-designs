@@ -9,15 +9,15 @@ export const BillingPage = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   return (
-    <div className="flex min-h-screen bg-white font-poppins text-sm text-billingPrimary">
+    <div className="relative flex min-h-screen bg-white font-poppins text-sm text-billingPrimary">
       {/* Sidebar */}
-      <SidebarBilling />
+      <SidebarBilling isSidebarOpen={isSidebarOpen}/>
 
       {/* Main Content */}
       <main className="w-full flex-1 py-24 lg:py-20">
         <button
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-          className="transition duration-300 flex w-full justify-end"
+          className="flex w-full justify-end transition  fixed z-20 duration-300"
         >
           {isSidebarOpen ? (
             <ImCross className="mr-8 -mt-16 h-8 w-8 lg:hidden" />
@@ -51,10 +51,12 @@ export const BillingPage = () => {
           </div>
 
           {/* your plan */}
-          <section className="mx-8 mt-16 lg:mt-0 flex h-min max-w-sm flex-col  justify-start  rounded-2xl bg-billingAccent p-8 font-medium text-white lg:mx-0 lg:mr-16">
+          <section className="mx-8 mt-16 flex aspect-square h-min max-w-sm flex-col justify-between  rounded-2xl  bg-billingAccent p-8 font-medium text-white lg:mx-0 lg:mt-0 lg:mr-16">
             <p>Your plan</p>
-            <p className="mt-6 text-xl font-bold">Pro Annual</p>
-            <p className="mt-4 text-xs">Renews on Nov. 2021</p>
+            <div>
+              <p className="mt-6 text-2xl font-bold">Pro Annual</p>
+              <p className="mt-2 text-xs">Renews on Nov. 2021</p>
+            </div>{" "}
             <button className="mt-4 whitespace-nowrap rounded-lg border border-white bg-transparent px-4 py-2">
               Cancel subscription
             </button>
@@ -62,7 +64,7 @@ export const BillingPage = () => {
         </div>
 
         {/* Payment Method */}
-        <section className="mx-8 lg:w-6/12 lg:mx-20  mt-16 lg:mt-20 ">
+        <section className="mx-8 mt-16 lg:mx-20  lg:mt-20 lg:w-6/12 ">
           <div className="">
             <p className="font-bold">Payment Method</p>
             <p className="text-xs font-medium">
@@ -71,7 +73,7 @@ export const BillingPage = () => {
           </div>
           <div className="mt-8 flex items-center justify-between gap-4">
             <img src="/visa.png" className="w-8" />
-            <p className="lg:ml-4 lg:flex-1 font-medium">Visa ending in 2255</p>
+            <p className="font-medium lg:ml-4 lg:flex-1">Visa ending in 2255</p>
             <button className="rounded-md border border-billingBg px-4 py-2">
               Remove
             </button>

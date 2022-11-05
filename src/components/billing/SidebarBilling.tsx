@@ -7,10 +7,14 @@ import { TbLogout, TbMail } from "react-icons/tb";
 import DesignCredit from "../DesignCredit";
 import NavItemBilling from "./NavItemBilling";
 
-export default function SidebarBilling() {
+export default function SidebarBilling({
+  isSidebarOpen,
+}: {
+  isSidebarOpen: boolean;
+}) {
   return (
-    <nav className="left0  sticky top-0 hidden h-screen w-1/5 flex-col justify-between bg-billingNavBg pb-4  pt-20 lg:flex ">
-      <div className="flex w-full flex-col  items-start">
+    <nav className={`left0 fixed top-0 z-10 flex h-screen max-h-screen w-full  flex-col items-center lg:items-start justify-between bg-billingNavBg pb-4 pt-20 lg:sticky lg:z-0  lg:w-1/5 ${isSidebarOpen ? "block pt-36 lg:pt-20": "hidden"}`}>
+      <div className="flex w-full flex-col items-start">
         {/* header */}
         <div className="flex cursor-pointer items-center gap-4 px-10">
           <img
@@ -22,7 +26,7 @@ export default function SidebarBilling() {
             <p className="text-xs">@igaspar</p>
           </div>
         </div>
-        <div className="mt-12 flex w-full flex-col gap-2 px-4 text-billingSecondary">
+        <div className="mt-12 flex w-full flex-col  gap-2 px-4 text-billingSecondary">
           <NavItemBilling
             icon={<MdOutlineSpaceDashboard className="h-6 w-6" />}
             title="General"
@@ -46,7 +50,7 @@ export default function SidebarBilling() {
         </div>
       </div>
       <div className="pl-4">
-        <NavItemBilling icon={<TbLogout className="h-6 w-6" />} title="Apps" />
+        <NavItemBilling icon={<TbLogout className="h-6 w-6" />} title="Log Out" />
         <DesignCredit sourceLink="https://uidesigndaily.com/posts/figma-billing-page-payment-day-1585" />
       </div>
     </nav>
