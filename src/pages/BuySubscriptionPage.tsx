@@ -2,16 +2,16 @@ import DesignCredit from "../components/DesignCredit";
 
 function BuySubscriptionPage() {
   return (
-    <div className="flex h-screen min-h-screen flex-col items-center justify-center bg-BuySubscriptionBg font-poppins text-sm font-medium">
-      <h2 className="text-center font-merriweather text-3xl font-black text-BuySubscriptionText">
+    <div className="px-4 py-16 lg:py-2 flex min-h-screen flex-col items-center justify-center bg-BuySubscriptionBg font-poppins text-sm font-medium">
+      <h2 className="text-center font-merriweather text-2xl lg:text-3xl font-black text-BuySubscriptionText">
         Get the most out of your mobile
         <br /> with the right subscription
       </h2>
-      <p className="mt-4 text-center text-sm font-medium">
+      <p className="mt-8 lg:mt-4 text-center text-xs lg:text-sm font-medium">
         All devices come with free delivery or pickup as standard. See
         information on <br /> available shopping options for your location.
       </p>
-      <div className="mt-16 grid grid-flow-col gap-12">
+      <div className="mt-16 grid grid-flow-col grid-rows-3 gap-12 lg:grid-rows-1">
         <div className="relative">
           <div className="sticky z-20 flex aspect-[.9] h-72 flex-col  items-start justify-between rounded-2xl bg-white p-8">
             <div className="">
