@@ -13,7 +13,7 @@ export default function SidebarBilling({
   isSidebarOpen: boolean;
 }) {
   return (
-    <nav className={`left0 fixed top-0 z-10 flex h-screen max-h-screen w-full  flex-col items-center lg:items-start justify-between bg-billingNavBg pb-4 pt-20 lg:sticky lg:z-0  lg:w-1/5 ${isSidebarOpen ? "block pt-36 lg:pt-20": "hidden"}`}>
+    <nav className={`left-0 fixed top-0 z-10 flex h-screen max-h-screen w-full  flex-col items-center lg:items-start justify-between bg-billingNavBg pb-4 pt-20 lg:sticky lg:z-0  lg:w-1/5 ${isSidebarOpen ? "block pt-36 lg:pt-20": "hidden"}`}>
       <div className="flex w-full flex-col items-start">
         {/* header */}
         <div className="flex cursor-pointer items-center gap-4 px-10">

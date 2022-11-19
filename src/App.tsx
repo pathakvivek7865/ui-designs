@@ -9,6 +9,8 @@ import PriceCard from "./pages/PriceCard";
 import EnterPassword from "./pages/EnterPassword";
 import RentalCarSearch from "./pages/RentalCarSearch";
 import { BillingPage } from "./pages/BillingPage";
+import AnimatedNavbar from "./pages/AnimattedNavbar";
+import BuySubscriptionPage from "./pages/BuySubscriptionPage";
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
           <Route path="enter-password" element={<EnterPassword />} />
           <Route path="rental-car-search" element={<RentalCarSearch />} />
           <Route path="billing" element={<BillingPage />} />
+          <Route path="animated-navbar" element={<AnimatedNavbar />} />
+          <Route path="buy-subscription" element={<BuySubscriptionPage />} />
+
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

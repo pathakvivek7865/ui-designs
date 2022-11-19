@@ -20,7 +20,10 @@ module.exports = {
         rentalCarSearchCardShadow: "0 44px 64px 0px rgba(69,25,160,.1)",
 
         // Billing
-        billingTableRowShadow:"0 8px 19px 0px rgba(223,223,253,.6)"
+        billingTableRowShadow: "0 8px 19px 0px rgba(223,223,253,.6)",
+
+        // Buy Subscription page
+        BuySubscriptionButton: "0 4px 0px 0px rgba(231,231,251)"
 
 
       },
@@ -42,6 +45,11 @@ module.exports = {
         billingAccent: "#EE4D38",
         billingBg: "#CBCBD9",
         billingNavBg: "#F8F8FF",
+
+        // Buy Subscription Page
+        BuySubscriptionBg: "#F4F5FA",
+        BuySubscriptionText: "#171435",
+        BuySubscriptionBorder: "#F0F0F6"
       }
     },
   },

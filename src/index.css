@@ -53,4 +53,8 @@
   .rental-car-search-card-before{
     @apply h-3/4 w-3/4 -z-10 -top-16 absolute  bg-[#FCC863] rounded-3xl
   }
+
+  .buy-subscription-card-before{
+    @apply absolute -top-10 left-5 z-10 h-72 aspect-[.9] bg-[#FCC863] rounded-3xl
+  }
 }

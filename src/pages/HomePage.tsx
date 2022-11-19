@@ -52,6 +52,14 @@ function HomePage() {
       author: "pathakvivek7865",
       date: "2022-11-05",
     },
+
+    {
+      title: "Buy Subscription",
+      imgSrc: "/screenshots/buy-subscription.png",
+      url: "components/buy-subscription",
+      author: "pathakvivek7865",
+      date: "2022-11-19",
+    },
   ];
 
   return (
