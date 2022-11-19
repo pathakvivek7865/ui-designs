@@ -27,7 +27,7 @@ function BuySubscriptionPage() {
               Add Subscription
             </button>
           </div>
-          <div className="absolute -top-4 -left-4 aspect-[.9] h-72 rounded-2xl bg-[#FCC83C]"></div>
+          <div className="absolute -top-6 -left-6 aspect-[.9] h-72 rounded-2xl bg-[#FCC83C] bg-opacity-40"></div>
         </div>
 
         <div className="relative">
@@ -47,7 +47,7 @@ function BuySubscriptionPage() {
               Add Subscription
             </button>
           </div>
-          <div className="absolute -top-4 -left-4 aspect-[.9] h-72 rounded-2xl bg-[#D498F4]"></div>
+          <div className="absolute -top-6 -left-6 aspect-[.9] h-72 rounded-2xl bg-[#D498F4] bg-opacity-40"></div>
         </div>
 
         <div className="relative">
@@ -65,7 +65,7 @@ function BuySubscriptionPage() {
               Add Subscription
             </button>
           </div>
-          <div className="absolute -top-4 -left-4 aspect-[.9] h-72 rounded-2xl bg-[#9494A3]"></div>
+          <div className="absolute -top-6 -left-6 aspect-[.9] h-72 rounded-2xl bg-[#9494A3] bg-opacity-10"></div>
         </div>
       </div>
 
