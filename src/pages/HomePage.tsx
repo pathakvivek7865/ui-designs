@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import {AiOutlineCalendar} from "react-icons/ai";
+import { AiOutlineCalendar } from "react-icons/ai";
 
 function HomePage() {
   const designs = [
@@ -60,6 +60,13 @@ function HomePage() {
       author: "pathakvivek7865",
       date: "2022-11-19",
     },
+    {
+      title: "Signup For Music Fest",
+      imgSrc: "/screenshots/signup-for-music-fest.png",
+      url: "components/signup-for-music-fest",
+      author: "pathakvivek7865",
+      date: "2022-12-09",
+    },
   ];
 
   return (
@@ -73,17 +80,17 @@ function HomePage() {
               {/* card */}
               {designs.reverse().map((design) => (
                 <Link key={design.url} to={`${design.url}`}>
-                  <div className="flex aspect-[1.6] justify-between  flex-col items-start overflow-hidden rounded-2xl border border-slate-900 border-opacity-10 bg-white shadow-priceCardTopCircle">
+                  <div className="flex aspect-[1.6] flex-col  items-start justify-between overflow-hidden rounded-2xl border border-slate-900 border-opacity-10 bg-white shadow-priceCardTopCircle">
                     <div className="flex-2 flex h-full w-full items-center justify-center overflow-hidden bg-white">
                       <img
                         className="h-full w-full object-cover"
                         src={design?.imgSrc ?? "/icons/image.svg"}
                       />
                     </div>
-                    <div className="p-4 border-t-2 w-full">
-                      <p className="font-bold text-lg">{design?.title ?? ""}</p>
-                      <div className="flex items-center mt-2 gap-2">
-                        <AiOutlineCalendar className="w-5 h-5"/>
+                    <div className="w-full border-t-2 p-4">
+                      <p className="text-lg font-bold">{design?.title ?? ""}</p>
+                      <div className="mt-2 flex items-center gap-2">
+                        <AiOutlineCalendar className="h-5 w-5" />
                         <p className="text-sm">{design.date}</p>
                       </div>
                     </div>

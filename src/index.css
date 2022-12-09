@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@font-face {
+  font-family: "Autography";
+  src: url("../public/fonts/Autography.otf");
+}
 
 @layer base {
-
-  *, *::after, *::before{
+  *,
+  *::after,
+  *::before {
     @apply box-border;
   }
 
@@ -43,18 +47,22 @@
   }
 
   .profile-page-header-progress-bar-before {
-    @apply absolute top-0 left-0 bottom-0 w-1/2 bg-[#F17A37] rounded-full;;
+    @apply absolute top-0 left-0 bottom-0 w-1/2 rounded-full bg-[#F17A37];
   }
 
-  .profile-page-header-card-before{
-    @apply w-[968px] h-[100px] absolute -bottom-[50px] bg-[#CFCFCF] rounded-[33px]
+  .profile-page-header-card-before {
+    @apply absolute -bottom-[50px] h-[100px] w-[968px] rounded-[33px] bg-[#CFCFCF];
   }
 
-  .rental-car-search-card-before{
-    @apply h-3/4 w-3/4 -z-10 -top-16 absolute  bg-[#FCC863] rounded-3xl
+  .rental-car-search-card-before {
+    @apply absolute -top-16 -z-10 h-3/4 w-3/4  rounded-3xl bg-[#FCC863];
   }
 
-  .buy-subscription-card-before{
-    @apply absolute -top-10 left-5 z-10 h-72 aspect-[.9] bg-[#FCC863] rounded-3xl
+  .buy-subscription-card-before {
+    @apply absolute -top-10 left-5 z-10 aspect-[.9] h-72 rounded-3xl bg-[#FCC863];
+  }
+
+  .signup-for-music-fest {
+    @apply absolute top-0 left-0 z-20 bg-[#093F80];
   }
 }

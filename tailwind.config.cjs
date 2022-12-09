@@ -10,7 +10,8 @@ module.exports = {
         garamond: ["Garamond"],
         inter: ['Inter', "sans-serif"],
         merriweather: ["Merriweather", "serif"],
-        mulish: ['Mulish', "sans-serif"]
+        mulish: ['Mulish', "sans-serif"],
+        autography: ["Autography", "serif"],
       },
       boxShadow: {
         ring: "0 0 50px 10px rgba(38,38,38, .95) inset",
@@ -23,7 +24,11 @@ module.exports = {
         billingTableRowShadow: "0 8px 19px 0px rgba(223,223,253,.6)",
 
         // Buy Subscription page
-        BuySubscriptionButton: "0 4px 0px 0px rgba(231,231,251)"
+        BuySubscriptionButton: "0 4px 0px 0px rgba(231,231,251)",
+
+        // Signup for music fest
+        signupForMusicFest: "-20px -20px 100px 100px rgba(255, 253, 199, 1)",
+
 
 
       },
@@ -49,8 +54,18 @@ module.exports = {
         // Buy Subscription Page
         BuySubscriptionBg: "#F4F5FA",
         BuySubscriptionText: "#171435",
-        BuySubscriptionBorder: "#F0F0F6"
-      }
+        BuySubscriptionBorder: "#F0F0F6",
+
+        // Signup for music fest
+        SignupForMusicFestPrimary: "#F4EC18",
+        SignupForMusicFestSecondary: "#093F80",
+
+      },
+
+      backgroundImage: {
+        "hero-pattern": "url('/src/assets/images/bg.svg')",
+        
+      },
     },
   },
   plugins: [],

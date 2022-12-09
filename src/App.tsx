@@ -11,6 +11,7 @@ import RentalCarSearch from "./pages/RentalCarSearch";
 import { BillingPage } from "./pages/BillingPage";
 import AnimatedNavbar from "./pages/AnimattedNavbar";
 import BuySubscriptionPage from "./pages/BuySubscriptionPage";
+import SignupForMusicFest from "./pages/SignupForMusicFest";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="billing" element={<BillingPage />} />
           <Route path="animated-navbar" element={<AnimatedNavbar />} />
           <Route path="buy-subscription" element={<BuySubscriptionPage />} />
+          <Route path="signup-for-music-fest" element={<SignupForMusicFest />} />
 
           <Route path="*" element={<NotFound />} />
         </Route>
