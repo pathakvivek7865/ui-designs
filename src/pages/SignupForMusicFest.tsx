@@ -41,7 +41,7 @@ function SignupForMusicFest() {
       <DesignCredit
         textStyle="mt-4 text-white z-20"
         linkStyle="ml-1 text-yellow-500"
-        sourceLink="https://www.instagram.com/yaanretouched/"
+        sourceLink="https://www.instagram.com/p/Cl8QgMBICqu/"
       />
     </div>
   );
