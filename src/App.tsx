@@ -12,6 +12,7 @@ import { BillingPage } from "./pages/BillingPage";
 import AnimatedNavbar from "./pages/AnimattedNavbar";
 import BuySubscriptionPage from "./pages/BuySubscriptionPage";
 import SignupForMusicFest from "./pages/SignupForMusicFest";
+import CreditCardCheckoutPage from "./pages/CreditCardCheckoutPage";
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
           <Route path="animated-navbar" element={<AnimatedNavbar />} />
           <Route path="buy-subscription" element={<BuySubscriptionPage />} />
           <Route path="signup-for-music-fest" element={<SignupForMusicFest />} />
+          <Route path="credit-card-checkout" element={<CreditCardCheckoutPage />} />
+
 
           <Route path="*" element={<NotFound />} />
         </Route>
