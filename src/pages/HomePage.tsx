@@ -67,6 +67,14 @@ function HomePage() {
       author: "pathakvivek7865",
       date: "2022-12-09",
     },
+
+    {
+      title: "Credit Card Checkout",
+      imgSrc: "/screenshots/credit-card-checkout.png",
+      url: "components/credit-card-checkout",
+      author: "pathakvivek7865",
+      date: "2022-12-11",
+    },
   ];
 
   return (
